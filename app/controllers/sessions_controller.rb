@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     elsif name && name != ""
       session[:name] = name
     else
-      render :new
+      redirect_to "/login"
     end
   end
 
